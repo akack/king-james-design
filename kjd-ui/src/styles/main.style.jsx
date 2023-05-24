@@ -25,6 +25,9 @@ export const HeroBannerDiv = styled.div`
   min-height: 150px;
   position: absolute;
   top: 500px;
+  @media (max-width: 768px) {
+    top: 400px;
+  }
 `;
 
 export const TextH1 = styled.h1`
@@ -210,13 +213,16 @@ export const CardSlideContainer = styled.section`
 
 //Card slides
 export const SlideContainer = styled.div`
-  width: 399px;
+  width: 90%;
   height: 399px;
   background: url(${(props) => props.slide}) no-repeat;
   background-size: cover;
   padding: 16px;
   margin-right: 10px;
   background-position: center center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -243,6 +249,10 @@ export const SlideText = styled.p`
   line-height: 150%;
   color: #ffffff;
   word-wrap: wrap;
+  @media (max-width: 768px) {
+    word-wrap: wrap;
+    width: 341px;
+  }
 `;
 
 //Footer

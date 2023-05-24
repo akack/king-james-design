@@ -24,7 +24,6 @@ function Clients() {
       <ClientsContentContainer>
         <Row>
           {clients.map(function (client, i) {
-            console.log(client.image);
             return (
               <ClientsItem>
                 <ClientImage src={client.image} />

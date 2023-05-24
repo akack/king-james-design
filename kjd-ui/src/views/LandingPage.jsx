@@ -22,15 +22,15 @@ export default function LandingPage() {
   };
 
   return (
-    <div>
+    <>
       <NavigationHeader />
-      <HeroBanner banner={"Testing"} />
+      <HeroBanner />
       <Container>
         <WhatWeDo />
         <CardSlider slides={slides} />
         <Clients />
       </Container>
       <NavigationFooter />
-    </div>
+    </>
   );
 }

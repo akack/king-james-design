@@ -10,19 +10,18 @@ import {
 import { Container } from "react-bootstrap";
 const image = require("../kjd-assets/confidence.jpeg");
 
-function HeroBanner({ banner }) {
-  console.log(banner);
+function HeroBanner() {
   return (
     <HeroBannerContainer banner={image}>
       <Container>
         <HeroBannerDiv>
-            <TextH1>Live with Confidence</TextH1>
-            <BannerTextP>
-              José Mourinho brings confidence to pan-African Sanlam campaign.
-            </BannerTextP>
-            <BannerButton>
-              <BannerButtonText>View project</BannerButtonText>
-            </BannerButton>
+          <TextH1>Live with Confidence</TextH1>
+          <BannerTextP>
+            José Mourinho brings confidence to pan-African Sanlam campaign.
+          </BannerTextP>
+          <BannerButton>
+            <BannerButtonText>View project</BannerButtonText>
+          </BannerButton>
         </HeroBannerDiv>
       </Container>
     </HeroBannerContainer>
