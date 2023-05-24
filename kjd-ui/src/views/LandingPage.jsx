@@ -17,8 +17,10 @@ export default function LandingPage() {
   }, []);
 
   const getSlides = async () => {
-    const slides = await apiService.getSlides();
-    setSlides(slides);
+    try {
+      const slides = await apiService.getSlides();
+      setSlides(slides);
+    } catch (error) {console.log(error)}
   };
 
   return (

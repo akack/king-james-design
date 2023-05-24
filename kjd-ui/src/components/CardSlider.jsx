@@ -37,24 +37,28 @@ function CardSlider({ slides }) {
         <Line />
         <WhatWeDoTextHeader>Case studies</WhatWeDoTextHeader>
       </WhatWeDoContainerFlex>
-      <Carousel
-        responsive={responsive}
-        showDots={false}
-        arrows={false}
-        infinite={true}
-        autoPlay={true}
-      >
-        {slides.map(function (object, i) {
-          return (
-            <SlideContainer slide={object.imageUrl} key={i}>
-              <ContentContainer>
-                <SlideTextHeader>{object.title}</SlideTextHeader>
-                <SlideText>{object.description}</SlideText>
-              </ContentContainer>
-            </SlideContainer>
-          );
-        })}
-      </Carousel>
+      {slides.length <= 0 ? (
+        <p>No case studies at the moment. Please keep an eye for any updates.</p>
+      ) : (
+        <Carousel
+          responsive={responsive}
+          showDots={false}
+          arrows={false}
+          infinite={true}
+          autoPlay={true}
+        >
+          {slides.map(function (object, i) {
+            return (
+              <SlideContainer slide={object.imageUrl} key={i}>
+                <ContentContainer>
+                  <SlideTextHeader>{object.title}</SlideTextHeader>
+                  <SlideText>{object.description}</SlideText>
+                </ContentContainer>
+              </SlideContainer>
+            );
+          })}
+        </Carousel>
+      )}
     </CardSlideContainer>
   );
 }
