@@ -1,0 +1,21 @@
+{
+  "name": "kjd-api",
+  "version": "1.0.0",
+  "description": "kjd restful api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Expressjs"
+  ],
+  "author": "Akha Magaqana",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "request-promise": "^4.2.6"
+  }
+}
