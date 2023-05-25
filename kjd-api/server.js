@@ -23,5 +23,5 @@ app.get("/v1/api", (req, res, next) => {
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     request(options).then(function (response) {
         res.status(200).json(response);
-    }).catch(function (err) { res.status(200).json({ error: err }) })
+    }).catch(function (err) { res.status(400).json({ error: err }) })
 });
