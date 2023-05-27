@@ -23,7 +23,7 @@ function NavigationFooter() {
         </WhatWeDoContainerFlex>
 
         <FooterContentContainer>
-          <FooterItem sm={8}>
+          <FooterItem sm={10}>
             <FooterH1>Have a project in mind?</FooterH1>
             <FooterH1>Let's make it happen</FooterH1>
           </FooterItem>
@@ -81,7 +81,7 @@ function NavigationFooter() {
               <FooterEmail href="#">Dribbie</FooterEmail>
             </Footerli>
           </FooterItem>
-          <FooterItem sm={4}>
+          <FooterItem sm={2}>
             <Footerli>
               <FooterEmail href="#">Explore open jobs</FooterEmail>
             </Footerli>
